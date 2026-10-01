@@ -24,7 +24,7 @@ class DataProcessor:
     def save_successful_symbols(filename, successful_symbols):
         """Save successfully fetched stock symbols to a CSV file."""
         if not successful_symbols:
-            logging.getLoger(__name__).info("No successful symbols to save.")
+            logging.getLogger(__name__).info("No successful symbols to save.")
             return
 
         try:
